@@ -29,3 +29,10 @@ SELECT p.titulo_juegos, COUNT(ep.id_emp) AS num_empleados, SUM(ep.horas_asignada
 FROM Proyectos p
 JOIN Empleados_Proyectos ep ON p.id_proy = ep.id_proy
 GROUP BY p.titulo_juegos;
+
+-- Búsqueda de Proyectos Próximos (Filtro de Fecha)
+
+SELECT titulo_juegos, fase_desarrollo, fecha_lanzamiento
+FROM Proyectos
+WHERE fecha_lanzamiento > '2025-01-01'
+ORDER BY fecha_lanzamiento ASC;
