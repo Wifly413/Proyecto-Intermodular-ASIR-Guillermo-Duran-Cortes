@@ -25,7 +25,10 @@ WHERE t.estado != 'Resuelto';
 
 -- Control de Carga de Proyectos (JOIN de 3 tablas y Agrupación)
 
-SELECT p.titulo_juegos, COUNT(ep.id_emp) AS num_empleados, SUM(ep.horas_asignadas) AS total_horas
+SELECT 
+p.titulo_juegos, 
+COUNT(ep.id_emp) AS num_empleados, 
+SUM(ep.horas_asignadas) AS total_horas
 FROM Proyectos p
 JOIN Empleados_Proyectos ep ON p.id_proy = ep.id_proy
 GROUP BY p.titulo_juegos;
@@ -39,7 +42,10 @@ ORDER BY fecha_lanzamiento ASC;
 
 -- Mapa de Responsabilidad de Bugs
 
-SELECT t.descripcion_bug, p.titulo_juegos, e.nombre_completo AS responsable_qa, d.nombre_dept
+SELECT t.descripcion_bug, 
+p.titulo_juegos, 
+e.nombre_completo AS responsable_qa, 
+d.nombre_dept
 FROM Tickets t
 INNER JOIN Proyectos p ON t.id_proy = p.id_proy
 INNER JOIN Empleados e ON t.id_emp = e.id_emp
@@ -48,7 +54,10 @@ WHERE t.estado = 'Abierto';
 
 -- Auditoría de Proyectos sin Personal
 
-SELECT p.titulo_juegos, p.fase_desarrollo, e.nombre_completo AS empleado_asignado
+SELECT 
+p.titulo_juegos, 
+p.fase_desarrollo, 
+e.nombre_completo AS empleado_asignado
 FROM Proyectos p
 LEFT JOIN Empleados_Proyectos ep ON p.id_proy = ep.id_proy
 LEFT JOIN Empleados e ON ep.id_emp = e.id_emp;
