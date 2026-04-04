@@ -22,3 +22,10 @@ SELECT t.descripcion_bug, t.estado, p.titulo_juegos
 FROM Tickets t
 JOIN Proyectos p ON t.id_proy = p.id_proy
 WHERE t.estado != 'Resuelto';
+
+-- Control de Carga de Proyectos (JOIN de 3 tablas y Agrupación)
+
+SELECT p.titulo_juegos, COUNT(ep.id_emp) AS num_empleados, SUM(ep.horas_asignadas) AS total_horas
+FROM Proyectos p
+JOIN Empleados_Proyectos ep ON p.id_proy = ep.id_proy
+GROUP BY p.titulo_juegos;
