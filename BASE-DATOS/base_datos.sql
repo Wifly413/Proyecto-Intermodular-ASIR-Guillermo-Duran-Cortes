@@ -40,7 +40,9 @@ CREATE TABLE Empleados_Proyectos (
     
     horas_asignadas INT CHECK (horas_asignadas > 0),
     PRIMARY KEY (id_emp, id_proy),
+    
     CONSTRAINT fk_ep_empleado FOREIGN KEY (id_emp) REFERENCES Empleados(id_emp),
+
     CONSTRAINT fk_ep_proyecto FOREIGN KEY (id_proy) REFERENCES Proyectos(id_proy)
 );
 
@@ -53,5 +55,6 @@ CREATE TABLE Tickets (
     id_emp INT, 
     
     CONSTRAINT fk_ticket_proyecto FOREIGN KEY (id_proy) REFERENCES Proyectos(id_proy),
+
     CONSTRAINT fk_ticket_tester FOREIGN KEY (id_emp) REFERENCES Empleados(id_emp)
 );
