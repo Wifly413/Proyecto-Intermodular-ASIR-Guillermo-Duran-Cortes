@@ -1,3 +1,5 @@
+CREATE DATABASE BugiSoft_DB;
+
 -- 1. Crear tabla Departamentos
 CREATE TABLE Departamentos (
     id_dept INT  AUTO_INCREMENT PRIMARY KEY,
@@ -48,7 +50,7 @@ CREATE TABLE Empleados_Proyectos (
 
 -- 6. Crear tabla Tickets
 CREATE TABLE Tickets (
-    id_ticket INT PRIMARY KEY,
+    id_ticket INT AUTO_INCREMENT PRIMARY KEY,
     descripcion_bug VARCHAR(40) NOT NULL,
     estado VARCHAR(10),
     id_proy INT,
