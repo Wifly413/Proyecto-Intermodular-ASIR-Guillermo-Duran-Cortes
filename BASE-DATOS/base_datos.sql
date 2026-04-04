@@ -53,6 +53,7 @@ CREATE TABLE Tickets (
     id_ticket INT AUTO_INCREMENT PRIMARY KEY,
     descripcion_bug VARCHAR(40) NOT NULL,
     estado VARCHAR(10),
+    
     id_proy INT,
     id_emp INT, 
     
