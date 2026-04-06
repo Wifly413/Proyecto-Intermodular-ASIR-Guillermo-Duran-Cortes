@@ -32,7 +32,23 @@
                 </xsl:for-each>
             </table>
             <!-- Realmente lo unico que hay que hacer es repicar lo mismo que en la primera tabla-->
-
+            <h3 id="tabla-equipos">2. Todos los equipos de la empresa</h3>
+            <table border="1">
+                <tr>
+                    <th>ID del PC</th>
+                    <th>Nombre</th>
+                    <th>Dirección IP</th>
+                    <th>VLAN Asignada</th>
+                </tr>
+                <xsl:for-each select="dispositivos/host">
+                    <tr>
+                        <td><xsl:value-of select="@id"/></td>
+                        <td><xsl:value-of select="nombre"/></td>
+                        <td><xsl:value-of select="ip"/></td>
+                        <td><xsl:value-of select="@vlan_ref"/></td>
+                    </tr>
+                </xsl:for-each>
+            </table>
 
         </body>
     </html>
