@@ -5,11 +5,10 @@
     <html>
         <body>
             <h1>Red de <xsl:value-of select="@empresa"/></h1>
-            <h2>Proyecto: <xsl:value-of select="@proyecto"/></h2>
-            <p><b>Fecha de entrega:</b> 06/04/2026</p>
+            <p>Fecha de entrega: 06/04/2026</p>
 
             <nav>
-                <b>Índice rápido:</b>
+                <b>Índice :</b>
                 <a href="#tabla-vlans">1. Ver todas las redes</a> |
                 <a href="#tabla-equipos">2. Ver los equipos</a>
             </nav>
@@ -26,7 +25,7 @@
                     <tr>
                         <td><xsl:value-of select="@id"/></td>
                         <td><xsl:value-of select="@nombre"/></td>
-                        <td><xsl:value-of select="ip_red"/></td>
+                        <td><xsl:value-of select="ip"/></td>
                         <td><xsl:value-of select="gateway"/></td>
                     </tr>
                 </xsl:for-each>
