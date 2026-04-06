@@ -10,35 +10,35 @@
     
     <redes>
         <vlan id="v10" nombre="ADMIN_RECEP">
-            <ip_red>192.168.10.0</ip_red>
+            <ip>192.168.10.0</ip>
             <gateway>192.168.10.1</gateway>
         </vlan>
         <vlan id="v20" nombre="DIRECCION">
-            <ip_red>192.168.20.0</ip_red>
+            <ip>192.168.20.0</ip>
             <gateway>192.168.20.1</gateway>
         </vlan>
         <vlan id="v30" nombre="DESARROLLO">
-            <ip_red>192.168.30.0</ip_red>
+            <ip>192.168.30.0</ip>
             <gateway>192.168.30.1</gateway>
         </vlan>
         <vlan id="v40" nombre="SOPORTE_QA">
-            <ip_red>192.168.40.0</ip_red>
+            <ip>192.168.40.0</ip>
             <gateway>192.168.40.1</gateway>
         </vlan>
         <vlan id="v50" nombre="FORMACION">
-            <ip_red>192.168.50.0</ip_red>
+            <ip>192.168.50.0</ip>
             <gateway>192.168.50.1</gateway>
         </vlan>
         <vlan id="v60" nombre="SERVIDORES">
-            <ip_red>192.168.60.0</ip_red>
+            <ip>192.168.60.0</ip>
             <gateway>192.168.60.1</gateway>
         </vlan>
         <vlan id="v70" nombre="INVITADOS">
-            <ip_red>192.168.70.0</ip_red>
+            <ip>192.168.70.0</ip>
             <gateway>192.168.70.1</gateway>
         </vlan>
         <vlan id="v99" nombre="GESTION_MGMT">
-            <ip_red>192.168.99.0</ip_red>
+            <ip>192.168.99.0</ip>
             <gateway>192.168.99.1</gateway>
         </vlan>
     </redes>

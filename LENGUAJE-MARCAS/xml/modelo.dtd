@@ -4,7 +4,7 @@
 
 <!ELEMENT redes (vlan+)> 
 
-<!ELEMENT vlan (ip_red, gateway)>
+<!ELEMENT vlan (ip, gateway)>
 <!ATTLIST vlan
     id ID #REQUIRED
     nombre CDATA #REQUIRED>
