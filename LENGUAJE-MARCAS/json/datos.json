@@ -1,0 +1,108 @@
+{
+  "infraestructura": {
+    "empresa": "BugiSoft",
+    "fecha_entrega": "06/04/2026",
+
+    "redes": [
+      {
+        "id": "v10",
+        "nombre": "ADMIN_RECEP",
+        "ip": "192.168.10.0",
+        "gateway": "192.168.10.1"
+      },
+      {
+        "id": "v20",
+        "nombre": "DIRECCION",
+        "ip": "192.168.20.0",
+        "gateway": "192.168.20.1"
+      },
+      {
+        "id": "v30",
+        "nombre": "DESARROLLO",
+        "ip": "192.168.30.0",
+        "gateway": "192.168.30.1"
+      },
+      {
+        "id": "v40",
+        "nombre": "SOPORTE_QA",
+        "ip": "192.168.40.0",
+        "gateway": "192.168.40.1"
+      },
+      {
+        "id": "v50",
+        "nombre": "FORMACION",
+        "ip": "192.168.50.0",
+        "gateway": "192.168.50.1"
+      },
+      {
+        "id": "v60",
+        "nombre": "SERVIDORES",
+        "ip": "192.168.60.0",
+        "gateway": "192.168.60.1"
+      },
+      {
+        "id": "v70",
+        "nombre": "INVITADOS",
+        "ip": "192.168.70.0",
+        "gateway": "192.168.70.1"
+      },
+      {
+        "id": "v99",
+        "nombre": "GESTION_MGMT",
+        "ip": "192.168.99.0",
+        "gateway": "192.168.99.1"
+      }
+    ],
+
+    "dispositivos": [
+      {
+        "id": "h10",
+        "nombre": "PC-ADM-01",
+        "ip": "192.168.10.11",
+        "vlan_ref": "v10"
+      },
+      {
+        "id": "h20",
+        "nombre": "PC-DIR-01",
+        "ip": "192.168.20.11",
+        "vlan_ref": "v20"
+      },
+      {
+        "id": "h30",
+        "nombre": "PC-DEV-01",
+        "ip": "192.168.30.11",
+        "vlan_ref": "v30"
+      },
+      {
+        "id": "h40",
+        "nombre": "PC-SOP-01",
+        "ip": "192.168.40.11",
+        "vlan_ref": "v40"
+      },
+      {
+        "id": "h50",
+        "nombre": "PC-FOR-01",
+        "ip": "192.168.50.11",
+        "vlan_ref": "v50"
+      },
+      {
+        "id": "h60",
+        "nombre": "SRV-DATA-01",
+        "ip": "192.168.60.2",
+        "vlan_ref": "v60"
+      },
+      {
+        "id": "h70",
+        "nombre": "LAP-INVITADOS",
+        "ip": "192.168.70.11",
+        "vlan_ref": "v70"
+      },
+      {
+        "id": "h99",
+        "nombre": "PC-MGMT-01",
+        "ip": "192.168.99.11",
+        "vlan_ref": "v99"
+      }
+    ]
+  }
+}
