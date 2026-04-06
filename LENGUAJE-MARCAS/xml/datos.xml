@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
-<!DOCTYPE red_bugisoft SYSTEM "modelo.dtd">
+<!DOCTYPE infraestructura SYSTEM "modelo.dtd">
 
 <!-- Voy a hacer la red que pantee en el intermodular ya que lo sugeriste en la clase-->
 
-<infraestructura empresa="BugiSoft">
 <!-- Es bastante sencillo dos hijos la red con las vlan y los dispositos sde cada vlan(iba a poner como una muestra pero realmente si quiero pintar la red entera los tendre que meter todos-->
-    <red>
+
+<infraestructura empresa="BugiSoft">
+    
+    <redes>
         <vlan id="v10" nombre="ADMIN_RECEP">
-            <red>192.168.10.0</red>
+            <ip_red>192.168.10.0</ip_red>
             <gateway>192.168.10.1</gateway>
         </vlan>
         <vlan id="v20" nombre="DIRECCION">
-            <red>192.168.20.0</red>
+            <ip_red>192.168.20.0</ip_red>
             <gateway>192.168.20.1</gateway>
         </vlan>
         <vlan id="v30" nombre="DESARROLLO">
-            <red>192.168.30.0</red>
+            <ip_red>192.168.30.0</ip_red>
             <gateway>192.168.30.1</gateway>
         </vlan>
         <vlan id="v40" nombre="SOPORTE_QA">
-            <red>192.168.40.0</red>
+            <ip_red>192.168.40.0</ip_red>
             <gateway>192.168.40.1</gateway>
         </vlan>
         <vlan id="v50" nombre="FORMACION">
-            <red>192.168.50.0</red>
+            <ip_red>192.168.50.0</ip_red>
             <gateway>192.168.50.1</gateway>
         </vlan>
         <vlan id="v60" nombre="SERVIDORES">
-            <red>192.168.60.0</red>
+            <ip_red>192.168.60.0</ip_red>
             <gateway>192.168.60.1</gateway>
         </vlan>
         <vlan id="v70" nombre="INVITADOS">
-            <red>192.168.70.0</red>
+            <ip_red>192.168.70.0</ip_red>
             <gateway>192.168.70.1</gateway>
         </vlan>
         <vlan id="v99" nombre="GESTION_MGMT">
-            <red>192.168.99.0</red>
+            <ip_red>192.168.99.0</ip_red>
             <gateway>192.168.99.1</gateway>
         </vlan>
-    </red>
+    </redes>
 
     <dispositivos>
         <host id="h10" vlan_ref="v10">
@@ -53,6 +55,10 @@
         <host id="h30" vlan_ref="v30">
             <nombre>PC-DEV-01</nombre>
             <ip>192.168.30.11</ip>
+        </host>
+        <host id="h40" vlan_ref="v40">
+            <nombre>PC-SOP-01</nombre>
+            <ip>192.168.40.11</ip>
         </host>
         <host id="h50" vlan_ref="v50">
             <nombre>PC-FOR-01</nombre>
