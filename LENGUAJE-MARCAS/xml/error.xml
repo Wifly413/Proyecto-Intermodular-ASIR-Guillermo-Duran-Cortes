@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE infraestructura SYSTEM "modelo.dtd">
+
+<infraestructura  empresa="BugiSoft">
+    <redes>
+        <vlan nombre="ADMIN_RECEP">
+            <ip>192.168.10.0</ip>
+            <gateway>192.168.10.1</gateway>
+        </vlan>
+        
+        <vlan id="v20" nombre="DIRECCION">
+            <ip>192.168.20.0</ip>
+            <latencia>10ms</latencia>
+            <gateway>192.168.20.1</gateway>
+        </vlan>
+    </redes>
+    
+    <dispositivos>
+        <host id="h10" vlan_ref="v10">
+            <nombre>PC-ADM-01</nombre>
+            <ip>192.168.10.11</ip>
+        </host>
+    </dispositivos>
+</infraestructura>
