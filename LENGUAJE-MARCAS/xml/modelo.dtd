@@ -1,0 +1,18 @@
+<!ELEMENT infraestructura (infraestructura_por_red, dispositivos)>
+<!ATTLIST infraestructura
+    proyecto CDATA #REQUIRED
+    empresa CDATA #REQUIRED>
+
+<!ELEMENT infraestructura_por_red (vlan+)> <!ELEMENT vlan (red, gateway)>
+<!ATTLIST vlan
+    id ID #REQUIRED
+    nombre CDATA #REQUIRED>
+
+<!ELEMENT red (#PCDATA)>
+<!ELEMENT gateway (#PCDATA)>
+
+<!ELEMENT dispositivos (host*)> <!ELEMENT host (nombre, ip)>
+<!ATTLIST host
+    id ID #REQUIRED
+    vlan_ref IDREF #REQUIRED> <!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ip (#PCDATA)>
