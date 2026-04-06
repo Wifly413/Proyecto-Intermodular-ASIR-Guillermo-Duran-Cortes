@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
+<!-- Voy a por un formato de tablas usando el for-each y la tipica table-->
   <xsl:template match="/infraestructura">
     <html>
         <body>
@@ -30,7 +31,7 @@
                     </tr>
                 </xsl:for-each>
             </table>
-            
+            <!-- Realmente lo unico que hay que hacer es repicar lo mismo que en la primera tabla-->
 
 
         </body>
