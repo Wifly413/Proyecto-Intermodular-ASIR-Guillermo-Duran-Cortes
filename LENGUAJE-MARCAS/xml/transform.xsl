@@ -4,36 +4,31 @@
   <xsl:template match="/">
     <html>
         <body>
-            <h1>Red Bugisoft: <xsl:value-of select="@empresa"/></h1>
+            <h1>Red de <xsl:value-of select="@empresa"/></h1>
             <h2>Proyecto: <xsl:value-of select="@proyecto"/></h2>
-            <p>Fecha de generación: 06/04/2026</p>
+            <p><b>Fecha de entrega:</b> 06/04/2026</p>
 
-            <h3 id="tabla-redes">1. Segmentos de Red</h3>
+            <nav>
+                <b>Índice rápido:</b>
+                <a href="#tabla-vlans">1. Ver todas las redes</a> |
+                <a href="#tabla-equipos">2. Ver los equipos</a>
+            </nav>
+
+            <hr/>
+
+            <h3 id="tabla-vlans">1. Resumen de las VLANs</h3>
             <table border="1">
                 <tr>
                     <th>ID</th>
-                    <th>Nombre</th>
-                    <th>IP de Red</th>
+                    <th>Nombre de la Red</th>
+                    <th>IP</th>
                     <th>Gateway</th>
                 </tr>
+                <xsl:for-each select="redes/vlan">
+                
+                </xsl:for-each>
             </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
 
 
         </body>
