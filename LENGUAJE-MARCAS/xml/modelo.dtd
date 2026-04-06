@@ -1,3 +1,4 @@
+
 <!ELEMENT infraestructura (redes, dispositivos)>
 <!ATTLIST infraestructura
     empresa CDATA #REQUIRED>
