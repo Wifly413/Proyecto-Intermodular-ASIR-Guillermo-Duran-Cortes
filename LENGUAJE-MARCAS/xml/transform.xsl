@@ -7,9 +7,6 @@
         <body>
             
             <h1 class="principal">Infraestructura de Red </h1>
-            <h2 class="secundario">Proyecto: <xsl:value-of select="@proyecto"/></h2>
-            
-
             
             
 
