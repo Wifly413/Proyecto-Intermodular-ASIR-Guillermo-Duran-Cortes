@@ -14,8 +14,6 @@
                 <a href="#tabla-equipos">2. Ver los equipos</a>
             </nav>
 
-            <hr/>
-
             <h3 id="tabla-vlans">1. Resumen de las VLANs</h3>
             <table border="1">
                 <tr>
