@@ -7,7 +7,6 @@
 <!-- Es bastante sencillo dos hijos la red con las vlan y los dispositos sde cada vlan(iba a poner como una muestra pero realmente si quiero pintar la red entera los tendre que meter todos-->
 
 <infraestructura empresa='BugiSoft'>
-    
     <redes>
         <vlan id='v10' nombre='ADMIN_RECEP'>
             <ip>192.168.10.0</ip>
