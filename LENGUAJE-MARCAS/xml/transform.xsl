@@ -4,6 +4,9 @@
 <!-- Voy a por un formato de tablas usando el for-each y la tipica table-->
   <xsl:template match="/infraestructura">
     <html>
+        <head>
+            <link href="css/estilo.css" rel="stylesheet"/>
+        </head>
         <body>
             <h1>Red de <xsl:value-of select="@empresa"/></h1>
             <p>Fecha de entrega: 06/04/2026</p>
