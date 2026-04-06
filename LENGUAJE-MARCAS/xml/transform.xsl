@@ -23,7 +23,12 @@
                     <th>Gateway</th>
                 </tr>
                 <xsl:for-each select="redes/vlan">
-                
+                    <tr>
+                        <td><xsl:value-of select="@id"/></td>
+                        <td><xsl:value-of select="@nombre"/></td>
+                        <td><xsl:value-of select="ip_red"/></td>
+                        <td><xsl:value-of select="gateway"/></td>
+                    </tr>
                 </xsl:for-each>
             </table>
             
