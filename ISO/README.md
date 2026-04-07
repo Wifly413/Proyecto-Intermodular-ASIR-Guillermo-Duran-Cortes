@@ -97,3 +97,32 @@ Para una correcta identificación en la red del estudio, se cambia el nombre gen
 Vamos a Administracion del Servidor ----> Servidor local---->En la ventana propiedades del sistema pulsamos cambiar
 
 ![alt text](image-9.png)
+
+## 4.2. Configuración de red (Conectividad Inicial)
+
+Se establecen los parámetros de red estáticos para la VLAN 60. Se utiliza un DNS externo temporalmente para validar el acceso a servicios de actualización.
+
+* **Dirección IP:** `192.168.60.2`
+* **Máscara de subred:** `255.255.255.0`
+* **Puerta de enlace:** `192.168.60.1`
+* **Servidor DNS:** `8.8.8.8` (Configurado para permitir salida a internet y descarga de parches).
+* **DNS Final :** Se cambiará a `127.0.0.1` tras configurar el Controlador de Dominio.
+
+![alt text](image-10.png)
+
+## 4.3. Actualizaciones del sistema
+
+Se gestionan las actualizaciones de seguridad a través de Windows Update para proteger el servidor frente a vulnerabilidades antes de su despliegue final.
+
+![alt text](image-11.png)
+
+## 4.4. Instalación de paquetes y software necesario
+Para mejorar la operatividad de la máquina virtual y la gestión del servidor, se instala el software base requerido.
+
+* **Software instalado:** VirtualBox Guest Additions y los paquetes "AD DS" , "DNS" y "Servicios de archivos"
+
+Hay que reiniciar despues de este proceso:
+![alt text](image-12.png)
+
+En Administracion del Servidor instalamos los paquetes(agregar roles y caracteristicas):
+
