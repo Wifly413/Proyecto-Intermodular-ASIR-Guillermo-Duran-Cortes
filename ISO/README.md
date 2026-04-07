@@ -52,3 +52,22 @@ Antes de iniciar la maquina debemos configurar la red con adaptador puente , y a
 
 ![alt text](image-4.png)
 
+# 3: Instalación del sistema operativo
+
+En este apartado se documenta el proceso técnico de instalación del sistema operativo base para la infraestructura de BugiSoft.
+
+---
+
+## 3.1. Inicio del instalador y selección de edición
+Se inicia la máquina virtual desde la imagen ISO de Windows Server 2025. 
+
+En el asistente, seleccionamos la versión "Datacenter con Experiencia de Escritorio" para facilitar la administración técnica del estudio.
+
+![alt text](image-5.png)
+
+## 3.2. Selección de la unidad de destino
+Se identifica el disco de 70 GB creado específicamente para alojar el sistema operativo y lo instalo ahi
+
+![alt text](image-6.png)
+
+Despues de esto le damos a aceptar y se inicara la instalacion de Windows Server y esperaremos a que termine.
