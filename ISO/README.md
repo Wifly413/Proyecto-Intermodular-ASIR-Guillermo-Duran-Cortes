@@ -46,4 +46,9 @@ Aqui tenemos la configuracion inicial en VB , elegiendo windows , asiganndole la
 
 ![alt text](image-2.png)
 
-Antes de iniciar la maquina debemos configurar la red con adaptador puente , y añadir la imagen al almacenamiento para ejecutarla.Tambien añadiremos 2 discos extra para hacer un Raid 5.
+Antes de iniciar la maquina debemos configurar la red con adaptador puente , y añadir la imagen al almacenamiento para ejecutarla.Tambien añadiremos 4 discos extra para hacer un Raid 10, esto garantizará máxima velocidad de lectura/escritura y tolerancia a fallos físicos.
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
