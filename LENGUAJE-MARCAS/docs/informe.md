@@ -28,7 +28,7 @@ Se aportan las siguientes evidencias visuales del funcionamiento del sistema:
 ![Resultado Final HTML](transform_html.png)
 
 ## 5. Integración en el proyecto
-Basicamente opte por hacer una demosntracion grafica con tablas de las diferentes Vlans y los dispositivos asociados , asi era como mas ilustrativo:
+Basicamente opte por hacer una demostracion grafica con tablas de las diferentes Vlans y los dispositivos asociados , asi era como mas ilustrativo:
 * **Generación de Reportes:** Basicamente al tener una representacion visual de las redes permite comprobar todos los datos en un clic.
 * **Facilidad:** Se adjunta una exportación en **JSON** (`datos.json`). Este formato permite que otros módulos consuman la información de la red de manera más ligera .
 
