@@ -126,3 +126,8 @@ Hay que reiniciar despues de este proceso:
 
 En Administracion del Servidor instalamos los paquetes(agregar roles y caracteristicas):
 
+![alt text](image-13.png)
+
+Despues de esto le damos a instalar y esperamos a que todos los complementos esten instalados:
+
+![alt text](image-14.png)
