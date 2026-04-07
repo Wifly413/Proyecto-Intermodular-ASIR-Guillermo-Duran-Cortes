@@ -30,3 +30,20 @@ Para necesidades técnicas puntuales o entornos aislados, se definen los siguien
     * **Seguridad de Invitados:** Para los usuarios externos, se dan sistemas operativos pero con restricciones para no acceder al sistema.
 
 ---
+
+# 2. Plan de implantación del sistema operativo
+
+Para desplegar el sistema operativo de nuestro servidor principal de datos e identidades (**SRV-DATA-01**), he decidido realizar una **instalación mediante máquinas virtuales** utilizando Virtualbox.
+
+He elegido este método porque es el más lógico para una empresa como BugiSoft:
+* **Seguridad :** Trabajar con máquinas virtuales me permite hacer "fotos" del estado del servidor. Si rompo algo trasteando con las configuraciones, puedo volver al estado anterior en un clic.
+* **Aprovechamiento del hardware:** Me permite tener este Windows Server 2025 y el futuro servidor web (Ubuntu) conviviendo dentro del mismo ordenador físico, ahorrando mucho dinero en equipos.
+
+Aqui tenemos la configuracion inicial en VB , elegiendo windows , asiganndole la version  a Windows server 2025,asignandole los nucleos de la CPU correspondientes, la RAM(de 6gb para arriba) y el tamaño del disco duro (+50Gb)
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+Antes de iniciar la maquina debemos configurar la red con adaptador puente , y añadir la imagen al almacenamiento para ejecutarla.Tambien añadiremos 2 discos extra para hacer un Raid 5.
