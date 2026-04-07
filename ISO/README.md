@@ -93,3 +93,7 @@ Para una correcta identificación en la red del estudio, se cambia el nombre gen
 
 * **Nombre asignado:** `SRV-DATA-01`
 * **Descripción:** Servidor principal de identidades y recursos.
+
+Vamos a Administracion del Servidor ----> Servidor local---->En la ventana propiedades del sistema pulsamos cambiar
+
+![alt text](image-9.png)
