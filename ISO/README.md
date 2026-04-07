@@ -40,6 +40,7 @@ He elegido este método porque es el más lógico para una empresa como BugiSoft
 * **Aprovechamiento del hardware:** Me permite tener este Windows Server 2025 y el futuro servidor web (Ubuntu) conviviendo dentro del mismo ordenador físico, ahorrando mucho dinero en equipos.
 
 Aqui tenemos la configuracion inicial en VB , elegiendo windows , asiganndole la version  a Windows server 2025,asignandole los nucleos de la CPU correspondientes, la RAM(de 6gb para arriba) y el tamaño del disco duro (+50Gb)
+
 ![alt text](image.png)
 
 ![alt text](image-1.png)
@@ -80,3 +81,15 @@ Tras el reinicio automático, se establece la contraseña de la cuenta de Admini
 Despues ya estaremos en la pantalla de inicio y pondremos nuestra contraseña establecida anterioremente.A partir de aqui pasamos a la configuracion del sistema
 
 ![alt text](image-8.png)
+
+# ⚙️ Punto 4: Configuración del sistema
+
+Tras completar la instalación de Windows Server 2025, se procede a realizar las configuraciones básicas necesarias para que el servidor sea funcional y seguro dentro de la infraestructura de la empresa
+
+---
+## 4.1. Nombre del equipo
+
+Para una correcta identificación en la red del estudio, se cambia el nombre genérico del servidor por uno estandarizado.
+
+* **Nombre asignado:** `SRV-DATA-01`
+* **Descripción:** Servidor principal de identidades y recursos.
