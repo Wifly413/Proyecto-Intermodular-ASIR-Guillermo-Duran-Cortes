@@ -73,6 +73,10 @@ Se identifica el disco de 70 GB creado específicamente para alojar el sistema o
 Despues de esto le damos a aceptar y se inicara la instalacion de Windows Server y esperaremos a que termine.
 
 ## 3.3. Finalización y comprobación de arranque
-Tras el reinicio automático, se establece la contraseña de la cuenta de Administrador siguiendo los protocolos de seguridad iniciales(en este caso voy a poner windows). Se inicia sesión para confirmar que el escritorio y el Administrador del Servidor cargan correctamente.
+Tras el reinicio automático, se establece la contraseña de la cuenta de Administrador siguiendo los protocolos de seguridad iniciales(en este caso voy a poner **Windows.**). Se inicia sesión para confirmar que el escritorio y el Administrador del Servidor cargan correctamente.
 
 ![alt text](image-7.png)
+
+Despues ya estaremos en la pantalla de inicio y pondremos nuestra contraseña establecida anterioremente.A partir de aqui pasamos a la configuracion del sistema
+
+![alt text](image-8.png)
