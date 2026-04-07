@@ -26,7 +26,7 @@ Para necesidades técnicas puntuales o entornos aislados, se definen los siguien
 
 * **Elección:** **Linux** (vía virtualización o WSL2) y **Sistemas Ligeros** para invitados.
 * **Justificación:**
-    * **Especialización técnica:** Para tareas pesadas como juntar todas las piezas del código (compilar) o mantener las bases de datos, los programadores prefieren tirar de entornos Linux, ya que están mejor preparados para eso y rinden bastante mejor.
+    * **Especialización técnica:** Para tareas pesadas como juntar todas las piezas del código  o mantener las bases de datos, los programadores prefieren tirar de entornos Linux, ya que están mejor preparados para eso.
     * **Seguridad de Invitados:** Para los usuarios externos, se dan sistemas operativos pero con restricciones para no acceder al sistema.
 
 ---
@@ -131,3 +131,21 @@ En Administracion del Servidor instalamos los paquetes(agregar roles y caracteri
 Despues de esto le damos a instalar y esperamos a que todos los complementos esten instalados:
 
 ![alt text](image-14.png)
+
+# 👥 Punto 5: Gestión de usuarios y permisos
+
+En esta fase se documenta la administración de identidades y accesos dentro del servidor.El objetivo es demostrar la capacidad para organizar un entorno profesional mediante una estructura jerárquica de usuarios y grupos.
+
+---
+
+## 5.1. Organización de usuarios según roles
+He creado Unidades Organizativas que permiten agrupar a los usuarios según su función dentro del estudio de videojuegos.
+
+* **Estructura de OUs**:
+    * `Administracion`: Personal de gestión empresarial.
+    * `Desarrollo`: Programadores y artistas técnicos.
+    * `Soporte`: Técnicos encargados del mantenimiento de la infraestructura.
+
+Para ello promocionaremos a AD:
+
+![alt text](image-16.png)
