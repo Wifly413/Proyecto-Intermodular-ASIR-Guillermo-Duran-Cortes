@@ -207,11 +207,38 @@ Aqui seria un ejemplo :
 
 ![alt text](image-26.png)
 
+# 🛠️ Punto 6: Servicios básicos del sistema
+
 ## 6.1. Compartición de archivos (File Server)
 Configure un servidor de archivos centralizado para que el equipo de desarrollo pueda intercambiar activos del juego.
 
-* **Estructura**: Carpeta raíz `C:\BugiSoft_Data`.
-* **Configuración de red**: Recurso compartido como `\\BUGISRV01\Proyectos`.
+* **Estructura**: Carpeta raíz `C:\Recursos_BugiSoft`.
+* **Configuración de red**: Recurso compartido como `\\Proyectos_Dev`.
 * **Gestión de permisos**:
     * **Guillermo**: Permisos de Modificación  para subir código y modelos 3D.
     * **Nau**: Control total para tareas de mantenimiento y backup.
+
+Aqui seria la comparticion de recursos a mi:
+
+![alt text](image-27.png)
+
+![alt text](image-30.png)
+
+Obviamente tambien deshabilitamos la herencia (Esto es para que solo entren quienes yo diga).
+
+Acto seguido añadimos a Nau y le damos el control total
+
+![alt text](image-29.png)
+
+## 6.2. Configuración de Acceso Remoto (RDP)
+Para facilitar la administración del servidor BUGISRV01 sin necesidad de acceso físico, se habilita el RDP.
+
+* **Configuración del sistema**: Se ha activado el acceso remoto permitiendo conexiones solo con Autenticación a nivel de red  para garantizar la seguridad.
+* **Gestión de accesos**: 
+    * Se ha autorizado específicamente al grupo `Sistemas` (donde se encuentra **Nau**).
+    * Se ha verificado que el Firewall de Windows permite el tráfico por el puerto **TCP 3389**.
+
+![alt text](image-32.png)
+
+![alt text](image-31.png)
+
