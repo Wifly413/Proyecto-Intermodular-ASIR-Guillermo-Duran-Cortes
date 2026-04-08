@@ -263,3 +263,11 @@ Basicamente aqui se monitoriza los procesos y recursos de todo el sistema, esto 
 ![alt text](image-34.png)
 
 ![alt text](image-35.png)
+
+## 7. Conclusión y reflexiones finales
+
+Llegados a este punto, la configuración de la infraestructura de **BugiSoft** ha sido un proceso intenso. Siendo sincero, el despliegue del servidor se ha hecho a veces pesado jajaja (me pase con las capturas) debido a la cantidad de detalles técnicos y errores que he tenido la verdad.
+
+Doy las gracias por las clases y por guiarnos en este proyecto. Ha sido un reto, pero gracias a esa base he podido sacar adelante este servidor central. 
+
+---
