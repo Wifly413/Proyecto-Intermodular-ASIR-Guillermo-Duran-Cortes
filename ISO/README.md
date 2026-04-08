@@ -155,3 +155,63 @@ Elegimos el nivel funcional a Windows Server 2025 y una contraseña **Windows.**
 ![alt text](image-17.png)
 
 Le vamos dando a siguiente hasta acabar y que se termine la promocion a AD y despues de que reinicie el equipo vamos a crear las OUs
+
+Vamos en el apartado herramientas a **Usuarios y equipos de Active Directory** , click derecho en nuestro bosque y crear unidad organizativa(creamos las 3)
+
+![alt text](image-18.png)
+
+## 5.2. Configuración de Grupos de Seguridad
+Se han implementado grupos de seguridad para facilitar la asignación de permisos de forma colectiva.
+
+* **Metodología**: Uso de grupos de seguridad globales para organizar a los usuarios por niveles de acceso.
+* **Grupos implementados**:
+    * **Developers**: Miembros con acceso a los repositorios de código y activos de videojuegos.
+    * **Sistemas**: Personal con privilegios para la gestión técnica del servidor `BUGISRV01`.
+    * **Staff**: Acceso general a los recursos comunes de la oficina.
+
+Ahora en cada OU vamos creando un grupo de seguridad, que sirven para dar permisos a varias personas a la vez sin tener que ir uno por uno
+
+Asi estaria configurado:
+
+![alt text](image-19.png)
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+## 5.3. Creación de usuarios
+Se procede al alta de cuentas individuales para los empleados de BugiSoft, ubicándolos en sus respectivas Unidades Organizativas para mantener la jerarquía del sistema.
+
+* **Metodología**: Creación de objetos de usuario con nombres de inicio de sesión normalizados .
+* **Usuarios de ejemplo**:
+    * **Desarrollo**: `dev.admin` (Administrador de motores de juego).
+    * **Soporte**: `it.tecnico` (Mantenimiento de infraestructura).
+    * **Administración**: `gestor.bugi` (Personal de oficina).
+
+Creamos estos 3 usuarios en cada OU(bastante sencillo el proceso) y asignamos las contraseñas (ej: BugiSoft.123) en cada usuario y marcamos la opcion que nunca expire
+
+![alt text](image-23.png)
+
+![alt text](image-24.png)
+
+![alt text](image-25.png)
+
+## 5.4. Asignación de permisos y roles
+Para simular la gestión real, vinculo a cada empleado con su grupo de seguridad correspondiente para que hereden los permisos de su rol:
+
+1.  **Nau** es miembro del grupo `Sistemas`.
+2.  **Guillermo** es miembro del grupo `Developers`.
+3.  **Jesus** es miembro del grupo `Staff`.
+   
+Aqui seria un ejemplo :
+
+![alt text](image-26.png)
+
+## 6.1. Compartición de archivos (File Server)
+Configure un servidor de archivos centralizado para que el equipo de desarrollo pueda intercambiar activos del juego.
+
+* **Estructura**: Carpeta raíz `C:\BugiSoft_Data`.
+* **Configuración de red**: Recurso compartido como `\\BUGISRV01\Proyectos`.
+* **Gestión de permisos**:
+    * **Guillermo**: Permisos de Modificación  para subir código y modelos 3D.
+    * **Nau**: Control total para tareas de mantenimiento y backup.
