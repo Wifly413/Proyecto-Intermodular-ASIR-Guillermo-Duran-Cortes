@@ -149,3 +149,9 @@ He creado Unidades Organizativas que permiten agrupar a los usuarios según su f
 Para ello promocionaremos a AD:
 
 ![alt text](image-16.png)
+
+Elegimos el nivel funcional a Windows Server 2025 y una contraseña **Windows.**
+
+![alt text](image-17.png)
+
+Le vamos dando a siguiente hasta acabar y que se termine la promocion a AD y despues de que reinicie el equipo vamos a crear las OUs
