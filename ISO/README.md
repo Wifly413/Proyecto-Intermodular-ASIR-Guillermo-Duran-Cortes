@@ -242,3 +242,20 @@ Para facilitar la administración del servidor BUGISRV01 sin necesidad de acceso
 
 ![alt text](image-31.png)
 
+## 6.3. Servicios de red básicos (Servidor DNS)
+El servicio DNS es fundamental para la infraestructura de , ya que permite la resolución de nombres dentro de la red local, facilitando la conexión de los puestos de trabajo de Nau, Guillermo y Jesus.
+
+* **Estado del servicio**: Instalado y configurado automáticamente durante la promoción del controlador de dominio.
+* **Zona de búsqueda directa**: Se ha verificado la existencia de la zona `bugisoft.local`.
+
+![alt text](image-33.png)
+
+## 6.4. Gestión de procesos y servicios del sistema
+Basicamente aqui se monitoriza los procesos y recursos de todo el sistema, esto es tremendamente vital para la empresa.
+
+* **Servicios monitorizados**:
+    * **Servicios de dominio de Active Directory **: El núcleo de la autenticación de Nau, Guillermo y Jesus.
+    * **Servidor DNS**: Crucial para la resolución de nombres en la red local.
+* **Metodología de gestión**:
+    * Se utiliza la consola `services.msc` para verificar que el tipo de inicio sea **Automático**.
+    * Se emplea el **Administrador de tareas** para supervisar que el proceso `lsass.exe` mantiene un consumo de recursos estable.
