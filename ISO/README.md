@@ -259,3 +259,7 @@ Basicamente aqui se monitoriza los procesos y recursos de todo el sistema, esto 
 * **Metodología de gestión**:
     * Se utiliza la consola `services.msc` para verificar que el tipo de inicio sea **Automático**.
     * Se emplea el **Administrador de tareas** para supervisar que el proceso `lsass.exe` mantiene un consumo de recursos estable.
+
+![alt text](image-34.png)
+
+![alt text](image-35.png)
