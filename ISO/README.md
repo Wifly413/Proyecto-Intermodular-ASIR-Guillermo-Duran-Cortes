@@ -41,7 +41,7 @@ He elegido este método porque es el más lógico para una empresa como BugiSoft
 
 Aqui tenemos la configuracion inicial en VB , elegiendo windows , asiganndole la version  a Windows server 2025,asignandole los nucleos de la CPU correspondientes, la RAM(de 6gb para arriba) y el tamaño del disco duro (+50Gb)
 
-![alt text](image.png)
+![alt text](/img/image.png)
 
 ![alt text](image-1.png)
 
