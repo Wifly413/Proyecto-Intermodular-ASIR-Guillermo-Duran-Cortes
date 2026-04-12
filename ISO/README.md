@@ -192,11 +192,11 @@ Se procede al alta de cuentas individuales para los empleados de BugiSoft, ubic�
 
 Creamos estos 3 usuarios en cada OU(bastante sencillo el proceso) y asignamos las contraseñas (ej: BugiSoft.123) en cada usuario y marcamos la opcion que nunca expire
 
-![alt text](image-23.png)
+![alt text](img/image-23.png)
 
-![alt text](image-24.png)
+![alt text](img/image-24.png)
 
-![alt text](image-25.png)
+![alt text](img/image-25.png)
 
 ## 5.4. Asignación de permisos y roles
 Para simular la gestión real, vinculo a cada empleado con su grupo de seguridad correspondiente para que hereden los permisos de su rol:
@@ -207,7 +207,7 @@ Para simular la gestión real, vinculo a cada empleado con su grupo de seguridad
    
 Aqui seria un ejemplo :
 
-![alt text](image-26.png)
+![alt text](img/image-26.png)
 
 # 🛠️ Punto 6: Servicios básicos del sistema
 
@@ -222,15 +222,15 @@ Configure un servidor de archivos centralizado para que el equipo de desarrollo 
 
 Aqui seria la comparticion de recursos a mi:
 
-![alt text](image-27.png)
+![alt text](img/image-27.png)
 
-![alt text](image-30.png)
+![alt text](img/image-30.png)
 
 Obviamente tambien deshabilitamos la herencia (Esto es para que solo entren quienes yo diga).
 
 Acto seguido añadimos a Nau y le damos el control total
 
-![alt text](image-29.png)
+![alt text](img/image-29.png)
 
 ## 6.2. Configuración de Acceso Remoto (RDP)
 Para facilitar la administración del servidor BUGISRV01 sin necesidad de acceso físico, se habilita el RDP.
@@ -240,9 +240,9 @@ Para facilitar la administración del servidor BUGISRV01 sin necesidad de acceso
     * Se ha autorizado específicamente al grupo `Sistemas` (donde se encuentra **Nau**).
     * Se ha verificado que el Firewall de Windows permite el tráfico por el puerto **TCP 3389**.
 
-![alt text](image-32.png)
+![alt text](img/image-32.png)
 
-![alt text](image-31.png)
+![alt text](img/image-31.png)
 
 ## 6.3. Servicios de red básicos (Servidor DNS)
 El servicio DNS es fundamental para la infraestructura de , ya que permite la resolución de nombres dentro de la red local, facilitando la conexión de los puestos de trabajo de Nau, Guillermo y Jesus.
@@ -250,7 +250,7 @@ El servicio DNS es fundamental para la infraestructura de , ya que permite la re
 * **Estado del servicio**: Instalado y configurado automáticamente durante la promoción del controlador de dominio.
 * **Zona de búsqueda directa**: Se ha verificado la existencia de la zona `bugisoft.local`.
 
-![alt text](image-33.png)
+![alt text](img/image-33.png)
 
 ## 6.4. Gestión de procesos y servicios del sistema
 Basicamente aqui se monitoriza los procesos y recursos de todo el sistema, esto es tremendamente vital para la empresa.
@@ -262,9 +262,9 @@ Basicamente aqui se monitoriza los procesos y recursos de todo el sistema, esto 
     * Se utiliza la consola `services.msc` para verificar que el tipo de inicio sea **Automático**.
     * Se emplea el **Administrador de tareas** para supervisar que el proceso `lsass.exe` mantiene un consumo de recursos estable.
 
-![alt text](image-34.png)
+![alt text](img/image-34.png)
 
-![alt text](image-35.png)
+![alt text](img/image-35.png)
 
 ## 7. Conclusión y reflexiones finales
 
