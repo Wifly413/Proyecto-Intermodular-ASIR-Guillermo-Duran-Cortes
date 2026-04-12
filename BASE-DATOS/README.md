@@ -40,4 +40,5 @@ Se han configurado roles de acceso específicos:
 | :--- | :--- | :--- |
 | `admin_redes` | Administrador | Acceso total (`ALL PRIVILEGES`) |
 | `user_qa` | Soporte Técnico | Solo lectura (`SELECT`) e inserción en Tickets |
-
+| `dev_backend` | Desarrollador (VLAN 30) | CRUD en Proyectos/Tickets, Solo lectura en asignaciones |
+| `auditor_externo`| Dirección/Auditoría | Solo lectura (`SELECT`) en toda la base de datos |
