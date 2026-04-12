@@ -34,7 +34,7 @@ Para replicar el entorno en un servidor local (XAMPP/MariaDB), ejecute los scrip
 ---
 
 ##  4. Seguridad y Administración (DCL)
-Siguiendo el **Principio de Menor Privilegio**, se han configurado roles de acceso específicos:
+Se han configurado roles de acceso específicos:
 
 | Usuario | Perfil | Permisos |
 | :--- | :--- | :--- |
