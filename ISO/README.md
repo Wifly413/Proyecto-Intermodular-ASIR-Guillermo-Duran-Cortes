@@ -43,15 +43,15 @@ Aqui tenemos la configuracion inicial en VB , elegiendo windows , asiganndole la
 
 ![alt text](img/image.png)
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 Antes de iniciar la maquina debemos configurar la red con adaptador puente , y añadir la imagen al almacenamiento para ejecutarla.Tambien añadiremos 4 discos extra para hacer un Raid 10, esto garantizará máxima velocidad de lectura/escritura y tolerancia a fallos físicos.
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 # 3: Instalación del sistema operativo
 
@@ -64,23 +64,23 @@ Se inicia la máquina virtual desde la imagen ISO de Windows Server 2025.
 
 En el asistente, seleccionamos la versión "Datacenter con Experiencia de Escritorio" para facilitar la administración técnica del estudio.
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 ## 3.2. Selección de la unidad de destino
 Se identifica el disco de 70 GB creado específicamente para alojar el sistema operativo y lo instalo ahi
 
-![alt text](image-6.png)
+![alt text](img/image-6.png)
 
 Despues de esto le damos a aceptar y se inicara la instalacion de Windows Server y esperaremos a que termine.
 
 ## 3.3. Finalización y comprobación de arranque
 Tras el reinicio automático, se establece la contraseña de la cuenta de Administrador siguiendo los protocolos de seguridad iniciales(en este caso voy a poner **Windows.**). Se inicia sesión para confirmar que el escritorio y el Administrador del Servidor cargan correctamente.
 
-![alt text](image-7.png)
+![alt text](img/image-7.png)
 
 Despues ya estaremos en la pantalla de inicio y pondremos nuestra contraseña establecida anterioremente.A partir de aqui pasamos a la configuracion del sistema
 
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
 # ⚙️ Punto 4: Configuración del sistema
 
@@ -96,7 +96,7 @@ Para una correcta identificación en la red del estudio, se cambia el nombre gen
 
 Vamos a Administracion del Servidor ----> Servidor local---->En la ventana propiedades del sistema pulsamos cambiar
 
-![alt text](image-9.png)
+![alt text](img/image-9.png)
 
 ## 4.2. Configuración de red (Conectividad Inicial)
 
@@ -108,13 +108,13 @@ Se establecen los parámetros de red estáticos para la VLAN 60. Se utiliza un D
 * **Servidor DNS:** `8.8.8.8` (Configurado para permitir salida a internet y descarga de parches).
 * **DNS Final :** Se cambiará a `127.0.0.1` tras configurar el Controlador de Dominio.
 
-![alt text](image-10.png)
+![alt text](img/image-10.png)
 
 ## 4.3. Actualizaciones del sistema
 
 Se gestionan las actualizaciones de seguridad a través de Windows Update para proteger el servidor frente a vulnerabilidades antes de su despliegue final.
 
-![alt text](image-11.png)
+![alt text](img/image-11.png)
 
 ## 4.4. Instalación de paquetes y software necesario
 Para mejorar la operatividad de la máquina virtual y la gestión del servidor, se instala el software base requerido.
@@ -122,15 +122,15 @@ Para mejorar la operatividad de la máquina virtual y la gestión del servidor, 
 * **Software instalado:** VirtualBox Guest Additions y los paquetes "AD DS" , "DNS" y "Servicios de archivos"
 
 Hay que reiniciar despues de este proceso:
-![alt text](image-12.png)
+![alt text](img/image-12.png)
 
 En Administracion del Servidor instalamos los paquetes(agregar roles y caracteristicas):
 
-![alt text](image-13.png)
+![alt text](img/image-13.png)
 
 Despues de esto le damos a instalar y esperamos a que todos los complementos esten instalados:
 
-![alt text](image-14.png)
+![alt text](img/image-14.png)
 
 # 👥 Punto 5: Gestión de usuarios y permisos
 
@@ -148,17 +148,17 @@ He creado Unidades Organizativas que permiten agrupar a los usuarios según su f
 
 Para ello promocionaremos a AD:
 
-![alt text](image-16.png)
+![alt text](img/image-15.png)
 
 Elegimos el nivel funcional a Windows Server 2025 y una contraseña **Windows.**
 
-![alt text](image-17.png)
+![alt text](img/image-17.png)
 
 Le vamos dando a siguiente hasta acabar y que se termine la promocion a AD y despues de que reinicie el equipo vamos a crear las OUs
 
 Vamos en el apartado herramientas a **Usuarios y equipos de Active Directory** , click derecho en nuestro bosque y crear unidad organizativa(creamos las 3)
 
-![alt text](image-18.png)
+![alt text](img/image-18.png)
 
 ## 5.2. Configuración de Grupos de Seguridad
 Se han implementado grupos de seguridad para facilitar la asignación de permisos de forma colectiva.
@@ -173,11 +173,13 @@ Ahora en cada OU vamos creando un grupo de seguridad, que sirven para dar permis
 
 Asi estaria configurado:
 
-![alt text](image-19.png)
+![alt text](img/image-19.png)
 
-![alt text](image-21.png)
+![alt text](img/image-20.png)
 
-![alt text](image-22.png)
+![alt text](img/image-21.png)
+
+![alt text](img/image-22.png)
 
 ## 5.3. Creación de usuarios
 Se procede al alta de cuentas individuales para los empleados de BugiSoft, ubicándolos en sus respectivas Unidades Organizativas para mantener la jerarquía del sistema.
