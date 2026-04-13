@@ -1,24 +1,17 @@
-
 <!ELEMENT infraestructura (redes, dispositivos)>
 <!ATTLIST infraestructura
     empresa CDATA #REQUIRED>
-
 <!ELEMENT redes (vlan+)> 
-
 <!ELEMENT vlan (ip, gateway)>
 <!ATTLIST vlan
     id ID #REQUIRED
     nombre CDATA #REQUIRED>
-
 <!ELEMENT ip_red (#PCDATA)>
 <!ELEMENT gateway (#PCDATA)>
-
 <!ELEMENT dispositivos (host*)>
-
 <!ELEMENT host (nombre, ip)>
 <!ATTLIST host
     id ID #REQUIRED
     vlan_ref IDREF #REQUIRED>
-
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT ip (#PCDATA)>
