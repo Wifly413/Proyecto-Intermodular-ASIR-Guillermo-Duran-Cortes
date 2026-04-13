@@ -28,8 +28,15 @@ Se aportan las siguientes evidencias visuales del funcionamiento del sistema:
 ![Resultado Final HTML](transform_html.png)
 
 ## 5. Integración en el proyecto
-Basicamente opte por hacer una demostracion grafica con tablas de las diferentes Vlans y los dispositivos asociados , asi era como mas ilustrativo:
-* **Generación de Reportes:** Basicamente al tener una representacion visual de las redes permite comprobar todos los datos en un clic.
-* **Facilidad:** Se adjunta una exportación en **JSON** (`datos.json`). Este formato permite que otros módulos consuman la información de la red de manera más ligera .
+
+Mas o menos este XML tiene algunas integraciones útiles con el resto del propyecto que he estado haciendo:
+
+* **Conexión con Redes :** El XML sirve como documentación técnica de la infraestructura diseñada en el módulo de Redes. Gracias a la transformación XSLT, un administrador de red puede generar de forma instantánea un inventario visual de las VLANs y equipos de mi empresa.
+  
+* **Programación :** Incluí una exportación en formato **JSON** (`datos.json`) diseñada para ser consumida por scripts de automatización . Esto permitiría, por ejemplo, automatizar la creación de usuarios en un Directorio Activo.
+
+* **Gestión de Datos :** El uso de XML y JSON permite la portabilidad de la información hacia sistemas de Bases de Datos. 
+
+* **Mantenimiento:** Al separar los datos ) de la estructura  y de la presentación , el sistema es totalmente escalable; si la empresa inventada crece, basta con añadir nuevos nodos al XML
 
 
