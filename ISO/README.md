@@ -1,5 +1,5 @@
-# Proyecto Intermodular PROMETEO: Infraestructura de Red
-> Diseño, implementación y documentación de red corporativa para BugiSoft (1º ASIR).
+# Proyecto Intermodular PROMETEO: Implantacion del Sistema Operativo
+> Diseño, implementación y documentación de instalación de sistemas operativos para BugiSoft (1º ASIR).
 
 # 1. Análisis de necesidades del sistema
 
